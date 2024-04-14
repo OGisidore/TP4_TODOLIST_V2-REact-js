@@ -6,14 +6,19 @@
 */
 import React, { FC, useEffect } from 'react';
 import './TodoViewModal.css';
+import { Modal } from 'react-bootstrap';
+import { Todo } from '../../models/Todo';
 
 
 interface TodoViewModalProps {
+  task:Todo,
+  displayModal:boolean,
+  onClose:()=>void
 
 }
 
 
-const TodoViewModal: FC<TodoViewModalProps> = () => {
+const TodoViewModal: FC<TodoViewModalProps> = ({task, displayModal, onClose}) => {
 
 
 
@@ -26,45 +31,58 @@ const TodoViewModal: FC<TodoViewModalProps> = () => {
   })
 
   return (
-    <div className="TodoViewModal">
-      <div className="modal fade" id="viewModal" tabIndex={-1} role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
-        <div className="modal-dialog" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="viewModalLabel">View Task</h5>
-              <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close">
+    <Modal show={displayModal}>
+      <Modal.Header>
+        <Modal.Title>
+        View Task
+        </Modal.Title>
+        <button type="button" onClick={onClose} className="btn-close" data-dismiss="modal" aria-label="Close">
               </button>
-            </div>
-            <div className="modal-body">
-              <div id="viewTaskDetails" />
-              <table className="table table-bordered">
+      </Modal.Header>
+      <Modal.Body>
+        <table className="table table-bordered">
                 <tbody>
                   <tr>
                     <th>Name</th>
-                    <td></td>
+                    <td> {task.name}</td>
                   </tr>
                   <tr>
                     <th>Description</th>
-                    <td></td>
+                    <td>{task.description}</td>
                   </tr>
                   <tr>
                     <th>Status</th>
-                    <td></td>
+                    <td>{task.status}</td>
                   </tr>
                   <tr>
                     <th>Created At</th>
-                    <td></td>
+                    <td>{task.createdAt?.toLocaleDateString()}</td>
                   </tr>
                   <tr>
                     <th>Updated At</th>
-                    <td></td>
+                    <td>{task.updatedAt?.toLocaleDateString()}</td>
                   </tr>
                 </tbody>
-              </table></div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </table>
+      </Modal.Body>
+
+    </Modal>
+    // <div className="TodoViewModal">
+    //   <div className="modal fade" id="viewModal" tabIndex={-1} role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+    //     <div className="modal-dialog" role="document">
+    //       <div className="modal-content">
+    //         <div className="modal-header">
+    //           <h5 className="modal-title" id="viewModalLabel">View Task</h5>
+    //           <button type="button" className="btn-close" data-dismiss="modal" aria-label="Close">
+    //           </button>
+    //         </div>
+    //         <div className="modal-body">
+    //           <div id="viewTaskDetails" />
+    //           </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
 
     
   );

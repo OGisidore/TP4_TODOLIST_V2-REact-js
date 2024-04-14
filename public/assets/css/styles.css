@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .matrix-container {
+    /* max-width: 800px; */
+    margin: 50px auto;
+  }
+  
+  .quadrant {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .quadrant-header {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .quadrant-header.one {
+      background-color: #017b27;
+  }
+  .quadrant-header.two {
+      background-color: #007bff;
+  }
+  .quadrant-header.three {
+      background-color: #ff00c3;
+  }
+  .quadrant-header.four {
+      background-color: #ff5e00;
+  }
+  .task-name{
+      flex: 1;
+  }
+  .task-list {}
+  .task-list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    height: 35vh;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .task-list:hover {
+      background-color: #efefef;
+  }
+  .task-list.over {
+      background-color: #f72929;
+  }
+  
+  .task {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 5px;
+  }

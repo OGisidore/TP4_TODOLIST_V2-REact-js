@@ -3,8 +3,8 @@ import { ADD_TO_STORAGE, REMOVE_FROM_STORAGE } from "../actions/actionTypes";
 import { StorageAction } from "../actions/types";
 
 
-const storage = {todos: []}
-const initState: any = storage ? storage : {todos: []};
+const storage = {todolist: []}
+const initState: any = storage ? storage : {todolist: []};
 export const storageReducers = (state = initState,
     action: StorageAction = { type: null, key: null, payload: null }) => {
     switch (action.type) {
