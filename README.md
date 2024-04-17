@@ -25,15 +25,14 @@ Bienvenue dans l'application TodoList ! Cette application vous permet de gérer 
 ## Technologies Utilisées
 
 - **Frontend:** React avec TypeScript
-- **Backend:** (Optionnel, si applicable)
-- **Frameworks et Bibliothèques:** (Listez les principales, par exemple React, Angular, etc.)
-- **Dépendances:** (Si vous utilisez des dépendances spécifiques)
+- **Frameworks et Bibliothèques:**  React
+- **Dépendances:** mudey-react-cli, react-redux , esperodb(pour le stockage des donnees en local) 
 
 ---
 
 ## Installation et Configuration
 
-1. **Clonez le Répertoire:** `git clone https://github.com/votre-utilisateur/todo-list.git`
+1. **Clonez le Répertoire:** `git clone https://github.com/OGisidore/TP4_TODOLIST_V2-REact-js.git`
 2. **Installez les Dépendances:** `npm install`
 3. **Lancez l'Application:** `npm start`
 
@@ -47,13 +46,13 @@ Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration,
 
 ## À Propos des Développeurs
 
-Cette application a été développée avec passion par [Votre Nom] et [Autre Contributeur], avec pour objectif de simplifier la gestion des tâches quotidiennes. Nous espérons que vous trouverez cette application aussi utile que nous l'avons trouvée en la créant.
+Cette application a été développée avec passion par Isidore OGOULODO , avec pour objectif de simplifier la gestion des tâches quotidiennes. Nous espérons que vous trouverez cette application aussi utile que nous l'avons trouvée en la créant.
 
 ---
 
 ## Besoin d'Aide?
 
-Si vous rencontrez des problèmes ou avez des questions, n'hésitez pas à ouvrir une issue sur le dépôt GitHub du projet ou à nous contacter directement à [votre@email.com].
+Si vous rencontrez des problèmes ou avez des questions, n'hésitez pas à ouvrir une issue sur le dépôt GitHub du projet ou à nous contacter directement à [isidoreogoulodo43@gmail.com].
 
 ---
 
