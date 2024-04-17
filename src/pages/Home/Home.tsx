@@ -69,7 +69,7 @@ const dispatch = useDispatch()
           <div className="row">
             {
             matrix.map((mat:Matrice)=>{
-              return <MatrixItem key={mat._id}  matrix={mat._id} matriceValue={mat.value}/>
+              return <MatrixItem key={mat._id} matrice={mat}/>
             })
           }
           </div>
